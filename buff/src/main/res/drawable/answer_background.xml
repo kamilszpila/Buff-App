@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/colorAnswerBackground" />
+
+    <corners android:radius="@dimen/answer_corner_radius" />
+
+    <padding
+        android:bottom="@dimen/answer_padding"
+        android:left="@dimen/answer_padding"
+        android:right="@dimen/answer_padding"
+        android:top="@dimen/answer_padding" />
+</shape>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAuthorName">#000000</color>
+
+    <color name="colorQuestionText">#FFFFFF</color>
+    <color name="colorQuestionBackground">#1B1E1E</color>
+
+    <color name="colorAnswerText">#31323A</color>
+    <color name="colorAnswerBackground">#CAFFFFFF</color>
+
+    <color name="colorTimerBackground">#80959595</color>
+    <color name="colorTimerProgress">#DE514E</color>
+    <color name="colorTimerText">#FFFFFF</color>
+
+</resources>

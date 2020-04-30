@@ -1,0 +1,7 @@
+<resources>
+    <string name="invalid_author">Buff Author data is invalid</string>
+    <string name="invalid_question">Buff Question data is invalid</string>
+    <string name="invalid_answers">Buff Answers data is invalid</string>
+    <string name="invalid_answers_count">Buff Answers data size is invalid. It must contains %d to %d answers</string>
+    <string name="invalid_parent_layout">BuffView parent layout is invalid. It must be RelativeLayout or ConstraintLayout</string>
+</resources>

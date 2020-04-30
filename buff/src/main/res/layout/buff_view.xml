@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/buff_margin_start"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/authorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/author_layout_margin_end"
+            android:background="@drawable/author_background"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/authorInfoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/author_info_layout_margin_top"
+                android:layout_marginEnd="@dimen/author_info_layout_margin_end"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/authorImage"
+                    android:layout_width="@dimen/author_image_size"
+                    android:layout_height="@dimen/author_image_size"
+                    android:layout_marginStart="@dimen/author_image_margin_start"
+                    android:layout_marginEnd="@dimen/author_image_margin_end"
+                    android:src="@drawable/ic_generic_answer"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/authorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAuthorName"
+                    android:textSize="@dimen/author_text_size"
+                    android:textStyle="bold"
+                    tools:text="Myra Ellen Amos" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/closeBuffBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_btn_close"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/questionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/question_layout_margin_bottom"
+        android:background="@drawable/question_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/question_margin"
+            android:layout_toStartOf="@+id/timerLayout"
+            android:textColor="@color/colorQuestionText"
+            android:textSize="@dimen/question_text_size"
+            android:textStyle="bold"
+            tools:text="Why Marcelo Bielsa is still using a translator?" />
+
+        <RelativeLayout
+            android:id="@+id/timerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <ProgressBar
+                android:id="@+id/timerProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/countdown_timer_size"
+                android:layout_height="@dimen/countdown_timer_size"
+                android:layout_centerInParent="true"
+                android:progress="100"
+                android:progressDrawable="@drawable/timer_progress"
+                android:secondaryProgress="100" />
+
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorTimerText"
+                android:textSize="@dimen/countdown_timer_text_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/answersLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/answers_layout_margin_end"
+        android:orientation="vertical" />
+
+</LinearLayout>
